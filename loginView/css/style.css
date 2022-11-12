@@ -1,0 +1,265 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Signika:wght@500&display=swap");
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  height: 100%;
+  min-height: 100%;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'bahnschift', sans-serif;
+  font-size: 16px;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 16px;
+  cursor: default;
+  background-color: #ababab;
+}
+
+a {
+  text-decoration: none;
+  color: #2C5282;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1460px;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+}
+
+.promo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  background-image: url("/img/promo.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.promo-img {
+  width: 100%;
+}
+
+.def-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.main {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 13%;
+}
+
+.authorization {
+  width: 350px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.authorization__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #1A202C;
+}
+
+.login-form__email {
+  margin-top: 24px;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #E8E8E8;
+  border-radius: 5px;
+}
+
+.login-form__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 28px;
+  vertical-align: text-bottom;
+}
+
+.user-email {
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
+.user-password {
+  margin-top: 11px;
+}
+
+.checkbox {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.remember {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.login-button {
+  background: #04C45C;
+  border: #04C45C;
+  margin-bottom: 15px;
+  margin-top: 27px;
+}
+
+.google {
+  background: #2D3748;
+  border: #2D3748;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.google__icon {
+  margin-right: 11px;
+}
+
+.google:active {
+  border-color: #7a92aa;
+  background-color: #6889a9;
+  -webkit-box-shadow: 0px 0px 25px #8db7e2;
+          box-shadow: 0px 0px 25px #8db7e2;
+}
+
+.google:hover {
+  border-color: #7a92aa;
+  -webkit-box-shadow: 0px 0px 25px #8db7e2;
+          box-shadow: 0px 0px 25px #8db7e2;
+}
+
+.login-button:active {
+  border-color: #46d789;
+  background-color: #07783b;
+  -webkit-box-shadow: 0px 0px 25px #46bb7c;
+          box-shadow: 0px 0px 25px #46bb7c;
+}
+
+.login-button:hover {
+  border-color: #46d789;
+  -webkit-box-shadow: 0px 0px 25px #46bb7c;
+          box-shadow: 0px 0px 25px #46bb7c;
+}
+
+.footer {
+  height: 100px;
+}
+
+.link {
+  color: #2B6CB0;
+}
